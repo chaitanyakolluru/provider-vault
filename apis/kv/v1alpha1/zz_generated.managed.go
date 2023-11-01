@@ -65,13 +65,6 @@ func (mg *Secret) SetProviderConfigReference(r *xpv1.Reference) {
 	mg.Spec.ProviderConfigReference = r
 }
 
-/*
-SetProviderReference of this Secret.
-Deprecated: Use SetProviderConfigReference.
-*/
-func (mg *Secret) SetProviderReference(r *xpv1.Reference) {
-	mg.Spec.ProviderReference = r
-}
 
 // SetPublishConnectionDetailsTo of this Secret.
 func (mg *Secret) SetPublishConnectionDetailsTo(r *xpv1.PublishConnectionDetailsTo) {
@@ -141,13 +134,6 @@ func (mg *SecretBackendV2) SetProviderConfigReference(r *xpv1.Reference) {
 	mg.Spec.ProviderConfigReference = r
 }
 
-/*
-SetProviderReference of this SecretBackendV2.
-Deprecated: Use SetProviderConfigReference.
-*/
-func (mg *SecretBackendV2) SetProviderReference(r *xpv1.Reference) {
-	mg.Spec.ProviderReference = r
-}
 
 // SetPublishConnectionDetailsTo of this SecretBackendV2.
 func (mg *SecretBackendV2) SetPublishConnectionDetailsTo(r *xpv1.PublishConnectionDetailsTo) {
@@ -217,13 +203,6 @@ func (mg *SecretV2) SetProviderConfigReference(r *xpv1.Reference) {
 	mg.Spec.ProviderConfigReference = r
 }
 
-/*
-SetProviderReference of this SecretV2.
-Deprecated: Use SetProviderConfigReference.
-*/
-func (mg *SecretV2) SetProviderReference(r *xpv1.Reference) {
-	mg.Spec.ProviderReference = r
-}
 
 // SetPublishConnectionDetailsTo of this SecretV2.
 func (mg *SecretV2) SetPublishConnectionDetailsTo(r *xpv1.PublishConnectionDetailsTo) {
