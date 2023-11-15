@@ -1,0 +1,28 @@
+Unseal Key 1: hE+RTIN4DI/HyhDm7pGtK3OAQplOlvUo/jKXheHI7SJR
+Unseal Key 2: L/ZOojjf8xTq3QRzNf7KYq9TuayPZ9W1wzSdGIID0hEI
+Unseal Key 3: nfN6h062rSVMZE4ej9lLaWD9OAJAPDxicoB/LpGqc/u5
+Unseal Key 4: nqhq38LUG4TDiTnGZ9pUzJX4/ApsBtOVEKTn+0UdDKrL
+Unseal Key 5: /lk4J5NKwfdA/xLhLxtlIAV9MGhZG7Q6/KjGBBb4QgzR
+
+Initial Root Token: hvs.UXi2tUveT6Ft4gOoOjih9Q58
+
+Vault initialized with 5 key shares and a key threshold of 3. Please securely
+distribute the key shares printed above. When the Vault is re-sealed,
+restarted, or stopped, you must supply at least 3 of these keys to unseal it
+before it can start servicing requests.
+
+Vault does not store the generated root key. Without at least 3 keys to
+reconstruct the root key, Vault will remain permanently sealed!
+
+It is possible to generate new unseal keys, provided you have a quorum of
+existing unseal keys shares. See "vault operator rekey" for more information.
+
+// history to help with in the future
+  30 vault secrets enable -path=/testing kv-v2
+  31 vault secrets list
+  59 vault kv put -mount=testing ff key=value  -help
+  60 vault kv get testing/ff
+  64 vault kv put -namespace testing-ns -mount=testing ff  key=value2
+  85 vault kv list testing/platform/registries/harbor/test-example-repo1/
+  86 vault kv get testing/platform/registries/harbor/test-example-repo1/push_bot_key
+

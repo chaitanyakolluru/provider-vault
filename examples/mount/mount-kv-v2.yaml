@@ -9,7 +9,7 @@ metadata:
 spec:
   deletionPolicy: Delete
   forProvider:
-    path: "kvv2"
+    path: "/testing"
     type: "kv-v2"
   providerConfigRef:
     name: vault-provider-config
